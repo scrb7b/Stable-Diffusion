@@ -7,7 +7,7 @@ from torchvision import transforms
 class CelebAImageDataset(Dataset):
     def __init__(self, root_dir, transform=None):
         self.root_dir = root_dir
-        self.image_names = os.listdir(root_dir)  # Получаем список всех файлов изображений
+        self.image_names = os.listdir(root_dir)
         self.transform = transform
 
     def __len__(self):
